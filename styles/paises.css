@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F2EC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+#header-div{    
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vh;
+    
+}
+
+
+
+#logo-nombre {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1vh;
+    margin: 0;
+    padding: 0;
+    order: -100;
+}
+
+#logo {
+    height: 8vh;
+    width: auto;
+    margin: 0;
+    margin-left: 15vh;
+    margin-top: 2.5vh;
+        padding: 0;
+    }
+    
+    #nombre-blog {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        margin-top: 2vh;
+        font-size: 3.5vh;
+        font-style: normal;
+        text-decoration: none;
+        color: white;
+    }
+        #nombre-blog::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: width 0.3s ease;
+        }
+
+        #nombre-blog:hover {
+            text-decoration: underline;
+        }
+
+        #nombre-blog:hover::after {
+            width: 100%;
+        }
+
+    nav{
+        flex-flow: row wrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+        margin-right: 5vh;
+        margin-top: 2vh;
+        gap: 3vh;
+        order: -50;
+    }
+    
+    .nav-link {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 1.7vh;
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ccc;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+main {
+    width: 60%;
+}
+
+.secciones {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background-color: #F5F2EC;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+    .secciones p{
+        margin: 2%;
+        margin-top: 1%;
+        font-weight: 500;
+        font-size: 2vh;
+    }
+
+    .secciones iframe{
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        padding: 0;
+    }
+
+    .secciones span{
+        margin: 2%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-decoration: underline;
+    }
+        #listas-p{
+            margin-top: 1%;
+            margin-bottom: 3%;
+            width: 80%;
+            height: auto;
+            font-weight: 500;
+            font-size: 2vh;
+        }
+
+    .secciones h3{
+        font-size: 1.5vh;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        align-self: flex-start;
+        margin-left: 3%;
+    }
+
+
+    .secciones h2{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    #img_portada{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2vh;
+        border-bottom: black 0.3vh solid;
+    }
+
+.asides {
+    display: flex;
+    float: right;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 0 2vh;
+    padding: 1vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background-color: #F5AB18;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    #img-yo {
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .asides h2 {
+        font-size: 2vh;
+        text-align: center;
+    }
+
+    .asides p{
+        margin: 0;
+        padding: 0;
+        font-weight: 550;
+        font-size: 1.8vh;
+    }
+    
+    .asides p a{
+        text-decoration: none;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .asides p a:hover{
+        text-decoration: underline;
+    }
+
+    .asides p img{
+        width: 2.5vh;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5vh;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+.espaciador-aside{
+    width: 80%;
+    height: 0.1vh;
+    margin-top: 2vh;
+    border-top: 1px solid black;
+    
+}
+
+.divs-aside{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 2vh;
+    margin-left: 5%;
+    padding: 0;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+        .divs-aside img{
+            width: 100%;
+            height: 20vh;
+        }
+
+        .divs-aside a{
+            font-size: 2vh;
+            text-decoration: none;
+            color: #F5AB18;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            align-self: center;
+            margin: 2vh;
+            transition: font-size 0.3s ease, text-decoration 0.3s ease;
+        }
+            .divs-aside a:hover {
+            font-size: 2.1vh;
+            text-decoration: underline;
+            }
+
+#form-suscripcion{
+    font-size: 1.;
+}
+
+#email{
+    background-color: white;
+    color: black;
+    border: black 0.2vh solid;
+}
+
+#boton-form{
+    background-color: #F5AB18;
+    color: black;
+    border: black 0.2vh solid;
+}
+
+.div-cabezal{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5vh;
+    flex-direction: column;
+}
+
+/* ALEMANIA */
+
+.header-ale{
+    background-image: url("../img/ale-cabezal.jpg");
+    background-size: cover;
+    background-position: top; 
+} 
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    }
+
+    #overlay h1{
+        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 10vh;
+        font-family: "UnifrakturCook", cursive;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+#imagen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
+
+
+/* ARGENTINA */
+
+.header-arg{
+    background: rgba(0, 0, 0, 0.922);
+    backdrop-filter: blur(6px);
+    padding-bottom: 1vh;
+    border-bottom: black 0.2vh solid;
+}
+    
+#overlay-arg {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    }
+
+    #overlay-arg h1{
+        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 8vh;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: bold;
+    }   
+
+#itinerario{
+    width: 80%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    margin-bottom: 5vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background-color: #F5F2EC;
+    border: 1px solid #ccc;
+    font-size: 2vh;
+}
+    #itinerario tr{
+        border: #ccc 0.1vh solid;
+    }
+    #itinerario th, td{
+        border: #ccc 0.1vh solid;
+        padding: 1vh;
+        text-align: center;
+    }
+
+/* CROACIA */
+
+.header-cro{
+    background-image: url("../img/cro-cabezal.png");
+    background-size: cover;
+    background-position: top; 
+}
+
+#overlay-cro {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    }
+
+    #overlay-cro h1{
+        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 8vh;
+        font-family: "Playwrite HR", cursive;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }  
+
+/* ITALIA */
+.header-ita{
+    background-image: url("../img/ita-cabezal.png");
+    background-size: cover;
+    background-position: top;
+}
+
+#overlay-ita {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    }
+
+    #overlay-ita h1{
+        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 8vh;
+        font-family: "Italiana", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }  
+
+/* NORUEGA */
+
+.header-nor{
+    background-image: url("../img/a.png");
+    background-size: cover;
+    background-position: top;
+}
+
+#overlay-nor {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    }
+
+    #overlay-nor h1{
+        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 8vh;
+        font-family: "Caesar Dressing", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }  
+
+
+
+footer {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    margin-top: 0;
+    font-size: 1.8vh;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+#div-1, #div-2, #div-3 {
+    display: inline-block;
+    width: 32%;
+    margin: 0;
+    padding: 0;
+}
+    #div-1{
+        margin-left: 2vh;
+    }
+        #sugerencia{
+            width: 80%;
+            height: 5vh;
+        }
+
+@media (max-width: 900px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  header {
+    position: static;
+    margin: 0;
+    padding: 1.2vh 0;
+    height: auto;
+    background: transparent;
+    z-index: 3;
+  }
+
+        #header-div{
+            width: 92%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2vh;
+            margin: 0 auto;
+        }
+            #logo{ height: 6.5vh; width: auto; margin-left: 1vh; }
+            #nombre-blog{display: none;}
+    
+  nav{
+    width: 100%;
+    justify-content: center;
+    gap: 2vh;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+    .nav-link{ font-size: 1.8vh; }
+
+  .div-cabezal{
+    position: relative;
+    width: 100%;
+    height: 56vh;
+    margin: 0 0 2.5vh 0;
+    overflow: hidden;
+    background: transparent;
+  }
+
+        .div-cabezal img{
+            display: block ; 
+            object-fit: cover;         
+            object-position: center;
+        }
+        
+        .div-cabezal::after{
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,.55) 70%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+
+  #overlay,
+  #overlay-arg,
+  #overlay-cro,
+  #overlay-ita,
+  #overlay-nor{
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    bottom: 4vh;
+    top: auto;
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    z-index: 2;                  
+    pointer-events: none;       
+  }
+
+        #overlay h1,
+        #overlay-arg h1,
+        #overlay-cro h1,
+        #overlay-ita h1,
+        #overlay-nor h1{
+            display: block !important;
+            margin: 0;
+            font-size: 6vh;
+            line-height: 1.1;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,.75);
+        }
+
+  main{ width: 92%; margin: 0 auto; height: auto; }
+
+  .secciones{ width: 100%; margin: 0 0 3vh 0; }
+        .secciones p{ font-size: 1.9vh; line-height: 1.5; }
+        #listas-p{ width: 92%; font-size: 1.9vh; }
+        #img_portada{ width: 100%; height: auto; border-bottom: .3vh solid black; }
+        .secciones iframe{ width: 100%; aspect-ratio: 16/9; height: auto; }
+
+  .asides, .espaciador-aside{ display: none; }
+
+  footer{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2vh;
+    padding: 3vh 0;
+    font-size: 1.9vh;
+  }
+        #div-1, #div-2, #div-3{
+            width: 92%;
+            display: block;
+            text-align: center;
+            margin-top: 0;
+        }
+        #correo, #email{ width: 100%; height: 5.5vh; box-sizing: border-box; }
+        #sugerencia{ width: 100%; height: 12vh; }
+        #boton-form{ min-height: 5.5vh; padding: 0 2vh; }
+}
