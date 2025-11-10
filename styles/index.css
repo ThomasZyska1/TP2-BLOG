@@ -7,7 +7,7 @@ html, body {
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background-image: url('/img/fondo-linktree.jpg'); /* tu fondo */
+    background-image: url('img/fondo-linktree.jpg'); /* tu fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -224,4 +224,5 @@ footer {
     text-decoration: none;
   }
 }
+
 }
